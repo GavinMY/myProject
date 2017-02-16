@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>设备信息</title>
+    <link rel="stylesheet" type="text/css" href="dhj/css/style.css" media="all"> 
+    <link rel="stylesheet" type="text/css" href="dhj/css/slide.css" media="all">
+    <script type="text/javascript" src="dhj/js/jquery.js"></script>
+</head>
+
+<body style=" background:#eaeae9;">
+<div class="scroll"> 
+<form action="" method="">
+	<div class="information">
+    	<div class="information_list">
+        	<div class="information_tit">点火开关</div>
+            <div class="information_con" id="fire" ><img src="dhj/images/close.png" /></div>
+        </div>
+        <div class="information_list">
+        	<div class="information_tit">蜂鸣设置</div>
+            <div class="information_con" id=""><img src="dhj/images/close.png" /></div>
+        </div>
+         <div class="information_list">
+        	<div class="information_tit">每日控烟目标</div>
+            <div class="information_con"><input type="text" name="" class="setting" /> 支</div>
+        </div>
+         <div class="information_list">
+        	<div class="information_tit">电量</div>
+            <div class="information_con">90%</div>
+        </div>
+    </div>
+    <button type="button" class="submitbtn">确 定</button>
+</form>
+</div>
+</body>
+<script>
+ $('.information_con').click(function()
+ {
+    alert($(this).attr("id"));
+    var src =  $(this).find('img').attr('src');
+    //默认图片
+    var  oldsrc = 'dhj/images/close.png';
+    //新图片
+    var  newsrc = 'dhj/images/open.png';
+
+    if( src == oldsrc )
+    {
+       $(this).find('img').attr('src',newsrc);
+    }else
+    {
+       $(this).find('img').attr('src',oldsrc);
+    }
+ });
+</script>
+</html>

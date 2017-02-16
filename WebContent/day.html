@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>吸烟明细</title>
+    <link rel="stylesheet" type="text/css" href="dhj/css/style.css" media="all">
+   <link rel="stylesheet" type="text/css" href="dhj/css/slide.css" media="all">
+	<link rel="stylesheet" type="text/css" href="dhj/css/swiper.min.css" media="all">
+    <script type="text/javascript" src="dhj/js/jquery.js"></script>
+    <script type="text/javascript" src="dhj/js/zhou.js"></script>
+    <script type="text/javascript" src="dhj/js/mouth.js"></script>
+    <script type="text/javascript" src="dhj/js/data.js"></script>
+    <script type="text/javascript" src="dhj/js/index.js"></script>
+    <script type="text/javascript" src="dhj/js/swiper.min.js"></script>
+   
+</head>
+
+<body>
+<div class="scroll"> 
+    <div class="swiper-container">
+    
+        <div class="swiper-wrapper">
+        	<!-- 日 -->
+            <div class="swiper-slide">
+            	<a href="sbxx.html" class="userset">&nbsp; </a>
+            	<div class="daycon">
+                	<div class="dayset">控烟目标：7支</div>
+                	<div class="daytab">
+                    	<li style=" background:#FFF; color:#30937f;">日</li>
+                        <li>周</li>
+                        <li>月</li>
+                    </div>
+                    <div class="daydata"> <div id="doughnutChart" class="chart"></div> </div>
+                    <div class="daynum">
+                    		<li class="dayone">
+                            	<div class="dayfont">吸烟量</div>
+                                <div class="dayfont">5支</div>
+                            </li>
+                            <li class="daytwo">
+                            	<div class="dayfont">吸烟花销</div>
+                                <div class="dayfont">5元</div>
+                            </li>
+                            <li class="daythere">
+                            	<div class="dayfont">焦油含量</div>
+                                <div class="dayfont">115mg</div>
+                            </li>
+                    </div>
+                </div>
+            </div>
+            <!-- 周 -->
+            <div class="swiper-slide">
+            	<a href="sbxx.html" class="userset">&nbsp; </a>
+            	<div class="daycon">
+                	<div class="daytab">
+                    	<li>日</li>
+                        <li  style=" background:#FFF; color:#30937f;">周</li>
+                        <li>月</li>
+                    </div>
+                    <div class="daydata">
+                    	<div id="container" style="min-width:320px;height:150px;margin-top:10px;"></div>
+                    </div>
+                    <div class="daynum">
+                    	<li class="dayone">
+                            	<div class="dayfont">吸烟量</div>
+                                <div class="dayfont">26支</div>
+                            </li>
+                            <li class="daytwo">
+                            	<div class="dayfont">吸烟花销</div>
+                                <div class="dayfont">26元</div>
+                            </li>
+                            <li class="daythere">
+                            	<div class="dayfont">焦油含量</div>
+                                <div class="dayfont">685mg</div>
+                            </li>
+                    </div>
+                </div>
+            </div>
+            <!-- 月 -->
+            <div class="swiper-slide">
+            	<a href="sbxx.html" class="userset">&nbsp; </a>
+            	<div class="daycon">
+                	<div class="daytab">
+                    	<li>日</li>
+                        <li>周</li>
+                        <li  style=" background:#FFF; color:#30937f;">月</li>
+                    </div>
+                    <div class="daydata">
+                    	<div id="containe_mouth" style="min-width:320px;height:150px;margin-top:10px;"></div>
+                    </div>
+                    <a href="data.html">
+                        <div class="daynum">
+                            <li class="dayone">
+                                    <div class="dayfont">吸烟量</div>
+                                    <div class="dayfont">126支</div>
+                                </li>
+                                <li class="daytwo">
+                                    <div class="dayfont">吸烟花销</div>
+                                    <div class="dayfont">126元</div>
+                                </li>
+                                <li class="daythere">
+                                    <div class="dayfont">焦油含量</div>
+                                    <div class="dayfont">2356mg</div>
+                                </li>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <div class="daylist">
+    	<div class="daylmorning">
+        	<li>
+            	<div class="daylistL">
+                	<div class="daytime">10:35:26</div>
+                    <div class="daytime dayplace">雁塔区科技路50号</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+            <li>
+            	<div class="daylistL">
+                	<div class="daytime">11:05:26</div>
+                    <div class="daytime dayplace">碑林区大雁塔北广场</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+            <li>
+            	<div class="daylistL">
+                	<div class="daytime">11:38:26</div>
+                    <div class="daytime dayplace">未央区石化大道</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+        </div>
+        <div class="daylmorning">
+        	<li>
+            	<div class="daylistL">
+                	<div class="daytime">12:35:26</div>
+                    <div class="daytime dayplace">雁塔区科技路50号</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+            <li>
+            	<div class="daylistL">
+                	<div class="daytime">15:05:26</div>
+                    <div class="daytime dayplace">碑林区大雁塔北广场</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+            <li>
+            	<div class="daylistL">
+                	<div class="daytime">17:38:26</div>
+                    <div class="daytime dayplace">未央区石化大道</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+        </div>
+        <div class="daylmorning">
+        	<li>
+            	<div class="daylistL">
+                	<div class="daytime">19:35:26</div>
+                    <div class="daytime dayplace">雁塔区科技路50号</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+            <li>
+            	<div class="daylistL">
+                	<div class="daytime">21:05:26</div>
+                    <div class="daytime dayplace">碑林区大雁塔北广场</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+            <li>
+            	<div class="daylistL">
+                	<div class="daytime">23:38:26</div>
+                    <div class="daytime dayplace">未央区石化大道</div>
+                </div>
+                <div class="daylistR">吸烟 <span>1</span> 支</div>
+            </li>
+        </div>
+    </div>
+    
+</div>
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+<script>
+$(".daylmorning").find("li:last").css('border','none');
+var tabli = $('.daytab li').width();
+$('.daytab li').height(tabli);
+$('.daytab li').css('line-height',tabli+'px');
+$(".daunum").find("li:last").css('border','none');
+</script>
+</html>

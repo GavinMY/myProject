@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>demo</display-name>
+  <servlet>
+    <servlet-name>callback</servlet-name>
+    <servlet-class>com.bluelight.demo.web.CallbackServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>callback</servlet-name>
+    <url-pattern>/callback</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>oauthServlet</servlet-name>
+		<servlet-class>
+			com.bluelight.demo.web.OAuthServlet
+		</servlet-class>
+	</servlet>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FireinfoSelvet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.FireinfoSelvet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DataServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.DataServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeviceAuth</servlet-name>
+    <servlet-class>com.bluelight.demo.web.DeviceAuths</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EquipmentServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.EquipmentServlet</servlet-class>
+  </servlet>
+ <servlet>
+  <servlet-name>dwr</servlet-name>
+  <servlet-class>
+	  org.directwebremoting.servlet.DwrServlet
+  </servlet-class>
+  <init-param>
+                    <param-name>debug</param-name>
+                    <param-value>true</param-value>
+     
+  </init-param>
+
+<init-param>
+<param-name>logLevel</param-name>
+<param-value>warn</param-value>
+</init-param>
+<init-param>
+<param-name>crossDomainSessionSecurity</param-name>
+<param-value>false</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>dayFire</servlet-name>
+    <servlet-class>com.bluelight.demo.web.dayFire</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WeinfoServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.WeinfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetopenServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.GetopenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InvitationServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.InvitationServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YaoqingServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.YaoqingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YcjkServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.YcjkServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleFamilyServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.DeleFamilyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BackServlet</servlet-name>
+    <servlet-class>com.bluelight.demo.web.BackServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+ <servlet-mapping>
+  <servlet-name>dwr</servlet-name>
+  <url-pattern>/dwr/*</url-pattern>
+</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>oauthServlet</servlet-name>
+		<url-pattern>/servlet/oauthServlet</url-pattern>
+	</servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FireinfoSelvet</servlet-name>
+    <url-pattern>/servlet/FireinfoSelvet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DataServlet</servlet-name>
+    <url-pattern>/servlet/DataServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeviceAuth</servlet-name>
+    <url-pattern>/servlet/DeviceAuths</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EquipmentServlet</servlet-name>
+    <url-pattern>/servlet/EquipmentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>dayFire</servlet-name>
+    <url-pattern>/servlet/dayFire</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>WeinfoServlet</servlet-name>
+    <url-pattern>/servlet/WeinfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetopenServlet</servlet-name>
+    <url-pattern>/servlet/GetopenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InvitationServlet</servlet-name>
+    <url-pattern>/servlet/InvitationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YaoqingServlet</servlet-name>
+    <url-pattern>/servlet/YaoqingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YcjkServlet</servlet-name>
+    <url-pattern>/servlet/YcjkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleFamilyServlet</servlet-name>
+    <url-pattern>/servlet/DeleFamilyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackServlet</servlet-name>
+    <url-pattern>/servlet/BackServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>  
+    
+  </welcome-file-list>
+</web-app>
